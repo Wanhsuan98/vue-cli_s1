@@ -1,30 +1,54 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+<div class="font-body">
+<video src="./assets/lego2.mp4" class=" video" autoplay loop muted></video>  
+<div class="start text-5xl text-gray-500 tansform hover:scale-110 transition ease-in-out
+duration-700">
+       <router-link to="/product" class="hover:text-gray-100">
+         <span class="text-lego legoMocWorld">lego</span>
+         <span class="text-moc legoMocWorld">moc</span>
+         <span class="text-world legoMocWorld">world</span>
+    </router-link>
+</div> 
+</div>
+<router-view></router-view>
+
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style scoped>
+*{
+  margin:0;
+  padding:0;
+}
+.start{
+  display: flex;
+  margin:0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 320px;
+  width:500px;
+}
+.video{
+  position: fixed;
+  object-fit: cover;
+  top: 0;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+#navbarall{
+  position: fixed;
+  overflow: hidden;
+  bottom:0;
+  width:100%;
 }
+  
 </style>
+
+<script>
+export default{
+
+}
+</script>

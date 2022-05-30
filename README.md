@@ -1,4 +1,4 @@
-# vue-cli_s1
+# router-practice
 
 ## Project setup
 ```
